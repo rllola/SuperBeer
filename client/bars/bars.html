@@ -1,0 +1,16 @@
+<template name="bars">
+	<div class="container">
+		<div class="col-md-6 col-md-offset-3">
+		  <h1>Nearest Bar</h1>
+		  <br/>
+		  <ul>
+		  	{{#each bars}}
+				<li>
+			      {{name}} <a href="/bar/{{ _id }}"> View</a>
+			  	</li>
+		    {{/each}}
+		  </ul>
+		  You want to add a bar to the list ? It's <a href="/bars/add">here</a>
+	  </div>
+  </div>
+</template>
